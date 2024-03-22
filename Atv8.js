@@ -1,11 +1,27 @@
-const leia = require('readline-sync');
+const leia = require("readline-sync");
 
-let saldo 1000, valor, deposito
+let saldo = 1000
+const operaçãoBancaria = leia.questionInt("Digite a operacao: ");
 
-console.log("\nDigite o número do produto:");
-console.log("1 -- cachorro quente R$20,00 ");
-console.log("2 -- x salada R$11,00");
-console.log("3 -- x bacon R$24,00");
-console.log("4 -- Bauru R$15,00 ");
-console.log("5 -- suco de laranja R$8,00 ");
-console.log("6 -- Refrigerante R$5,00");
+switch (operaçãoBancaria) {
+case 1: {
+    console.log($, saldo)
+    break
+}
+    case 2: {
+        const saque = leia.questionInt("Quanto voce quer sacar ");
+        if (saque <= saldo) {
+            saldo -= saque;
+            console.log("Novo saldo: R$", saldo);
+
+            break
+        } 
+        console.log("saque e maior que o saldo")
+    }
+    case 3: {
+        const deposito = leia.questionInt(" quanto voce deseja depositar?: ")
+        saldo += deposito
+        console.log("Novo saldo: R$", saldo)
+        break
+    }
+    }

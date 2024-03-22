@@ -1,11 +1,3 @@
-
-        valorTotal = quantidade * 5;
-        break;
-    default:
-        console.log("Produto inválido!");
-}
-
-if (produto >= 1 && produto <= 6) {
-    console.log("\nValor total da compra: R$" + valorTotal.toFixed(2));
-}
-
+if (numero % 2 === 0) 
+{
+   texto1=("Seu numero é par")

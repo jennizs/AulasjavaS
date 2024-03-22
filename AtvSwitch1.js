@@ -7,12 +7,16 @@ let valorTotal;
 quantidade = parseInt(readlineSync.question("\nDigite a quantidade desejada: "));
 
 console.log("\nDigite o número do produto:");
-console.log("1 -- cachorro quente R$20,00 ");
-console.log("2 -- x salada R$11,00");
-console.log("3 -- x bacon R$24,00");
-console.log("4 -- Bauru R$15,00 ");
-console.log("5 -- suco de laranja R$8,00 ");
-console.log("6 -- Refrigerante R$5,00");
+const produtos = [
+    { numero: 1, nome: "Cachorro Quente", preco: "R$20,00" },
+    { numero: 2, nome: "X-Salada", preco: "R$11,00" },
+    { numero: 3, nome: "X-Bacon", preco: "R$24,00" },
+    { numero: 4, nome: "Bauru", preco: "R$15,00" },
+    { numero: 5, nome: "Suco de Laranja", preco: "R$8,00" },
+    { numero: 6, nome: "Refrigerante", preco: "R$5,00" }
+];
+
+console.table(produtos);
 
 produto = parseInt(readlineSync.question("\nEscolha o numero do produto: "));
 
