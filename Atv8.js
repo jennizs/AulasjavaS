@@ -24,4 +24,8 @@ case 1: {
         console.log("Novo saldo: R$", saldo)
         break
     }
+<<<<<<< HEAD
     }
+=======
+    }
+>>>>>>> ebca85a99c0c65a2a4459c169150a56577606ce8
